@@ -1,0 +1,22 @@
+.promise{
+    height: 32rem;
+    margin: 0 17rem;
+    /* background-color: green; */
+}
+.p-heading{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-heading span:nth-child(1){
+    font-size: 2rem;
+}
+.p-heading span:nth-child(2){
+    font-size: 2rem;
+    color: red;
+}
+.p-heading span:nth-child(3){
+    font-size: 2rem;
+}

@@ -1,0 +1,25 @@
+.work{
+    height: 17rem;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #ff3b3f;
+    display: flex;
+    flex-direction: column;
+}
+.w-top{
+    width: 100%;
+    height: 40%;
+    color: #1a1a1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+.w-bottom{
+    color: #1a1a1d;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

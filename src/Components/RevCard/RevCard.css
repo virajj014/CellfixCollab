@@ -1,0 +1,30 @@
+.revcard{
+    /* background-color:yellow; */
+    display: flex;
+    justify-content: right;
+    height: 6rem;
+    width: 100%;
+}
+.rc-img{
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.rc-img img{transform: scale(0.7);}
+
+.rc-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.rc-details span:nth-child(1){
+    font-size: 1.2rem;
+}
+.rc-details span:nth-child(2){
+    font-size: 13px;
+    color: #a9a9a9;
+}
