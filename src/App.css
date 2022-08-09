@@ -16,6 +16,10 @@
     overflow: hidden;
     color: var(--black);    
     background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 

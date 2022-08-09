@@ -2,21 +2,27 @@ import React from 'react';
 import { useState } from 'react';
 import './Intro.css';
 import Logo from '../../img/logo.jpg';
+import {useNavigate} from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-function Intro() {
+function Intro()
+ {
+  const navigate = useNavigate();
+  let selectedDevice = "";
 
   const [style1,setStyle1] = useState("btn-stable");
   const buttonClicked1 = ()=>{
-    if(setStyle1("btn-active")==true){
-      setStyle1("btn-stable");
+      setStyle1("btn-active")
+      setStyle2("btn-stable")
+      selectedDevice="android";
+      navigate("/android-repair");
     }
-    else{
-      setStyle1("btn-active");
-    }
-  }
-  const [style2,setStyle2] = useState("btn-stable");
-  const buttonClicked2 = ()=>{
-    setStyle2("btn-active")
+    const [style2,setStyle2] = useState("btn-stable");
+    const buttonClicked2 = ()=>{
+      setStyle2("btn-active")
+      setStyle1("btn-stable")
+      selectedDevice="windows";
+      navigate("/windows-repair");
   }
   return (
     <div className="intro">
@@ -40,7 +46,7 @@ function Intro() {
                 <button  className={style1} onClick={buttonClicked1}>Android</button>
                 <button  className={style2} onClick={buttonClicked2}>Windows</button>
             </div>
-            <button className="confirm">Confirm & Proceed</button>
+            {/* <button className="confirm" onClick={androidRepair}>Confirm & Proceed</button> */}
         </div>
     </div>
   )

@@ -37,3 +37,9 @@
 .li_home{
     color: #ff3b3f!important;
 }
+
+@media screen and (max-width:624px) {
+    .n-right{
+        display: none;
+    }
+}

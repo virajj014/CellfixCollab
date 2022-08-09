@@ -2,10 +2,17 @@
     color: #000;
     height: 10rem;
     background-color: #ff3b3f;
-    margin: 0 14rem;
+    width: 50rem;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+.s-wrapper{
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .s1,.s2,.s3{
