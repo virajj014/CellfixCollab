@@ -1,0 +1,61 @@
+.select-os-outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-os-inner .osinactive {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.select-os-inner button:hover,
+.osactive {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.nextbtnactive {
+    background-color: rgb(255, 52, 52);
+    color: white;
+    border: none;
+    margin: 20px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nextbtnactive svg {
+    width: 20px;
+}
+
+.nextbtninactive {
+    background-color: rgb(255, 175, 175);
+    color: white;
+    border: none;
+    margin: 20px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: not-allowed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nextbtninactive svg {
+    width: 20px;
+}
