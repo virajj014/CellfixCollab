@@ -67,6 +67,25 @@ function AndroidIssue() {
         }
     }
     // console.log(issuelist)
+
+
+    const sendtoWhatsapp = () => {
+        let message = '';
+        message += 'Hi, I am using ' + selectdevice + ' and I am facing some issues.%0a%0a';
+        message += 'Device Name - ' + selectdevice + '%0a';
+        message += 'OS Name - ' + os + '%0a';
+        message += 'My issue is as follows:%0a%0a';
+        for (let i = 0; i < issuelist.length; i++) {
+            message += '- ' + issuelist[i] + '%0a';
+        }
+        message += '%0a';
+        message += 'Please help me out.%0a';
+        message += 'Thanks%0a';
+        message += '%0a';
+        message += 'Date: ' + `${new Date().toLocaleString()}` + '%0a';
+        console.log(message)
+        window.open('https://wa.me/917000896210?text=' + message);
+    }
     return (
         <div className="intro">
             <div className="i-left">
@@ -115,14 +134,14 @@ function AndroidIssue() {
 
 
                     {issuelist != '' ?
-                        <button className='nextbtnactive'>
-                            <span> Next</span>
+                        <button className='nextbtnactive' onClick={sendtoWhatsapp}>
+                            <span> Submit</span>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                             </svg>
                         </button>
-                        : <button className='nextbtninactive'>
-                            <span> Next</span>
+                        : <button className='nextbtninactive' >
+                            <span> Submit</span>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                             </svg>
